@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+#main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header
+{
+    background-color: #1b1b60;
+    display: flex;
+}
+
+#logo
+{
+    height: auto;
+	padding: 0.1em;
+    width: auto;
+}
+
+/*#container
+{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}*/
+
+#inicio
+{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+.titulo_seguimento
+{
+	font-family: 'Patua One', cursive;
+	font-size: 6vmin;
+	padding: 0.7em 0.2em 0.7em 0.2em;
+	color: #1b1b60;
+	text-align: center;
+	text-shadow: 1px 1px #cccccc;
+}
+
+#img_qual_curso
+{
+    width: auto;
+    height: auto;
+}
+
+.btn
+{
+	background-color: #1b1b60;
+	border: 2px solid #1b1b60;
+	cursor: pointer;
+	color: white;
+	font-family: 'Patua One', cursive;
+	font-size: 4vmin;
+    height: 1.5em;
+    width: 12em;
+	margin-top: 2em;
+	padding: 0.7em;
+}
+
+.btn:hover
+{
+	background-color: white;
+	border: 2px solid #1b1b60;
+	color: #1b1b60;
+}
+
+.btn:focus
+{
+	outline:0 !important;
+}
+
+#opcoes
+{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+#cursos
+{
+	background-color: #1b1b60;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+	width: 50%;
+	padding: 3em;
+	margin: 3em;
+}
+
+label
+{
+	color: white;
+	font-family: 'Patua One', cursive;
+	font-size: 4vmin;
+}
+
+.combo
+{
+	cursor: pointer;
+	height: 2.5em;
+	width: 16em;
+}
+
+#aviso_cursos
+{
+	font-family: 'Patua One', cursive;
+	color: red;
+}
+
+#perguntas
+{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+#pergunta_container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+	background-color: #1b1b60;
+	margin-top: 2em;
+	padding: 2em 1em 2em 1em;
+}
+
+.pergunta
+{
+	background-color: #e9aa00;
+	border: 2px solid #e9aa00;
+	color: #1b1b60;
+	cursor: pointer;
+	font-family: 'Patua One', cursive;
+	font-size: 4vmin;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	width: 15em;
+}
+
+.pergunta:hover
+{
+	background-color: #1b1b60;
+	border: 2px solid white;
+	color: white;	
+}
+
+#sugestao_container
+{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+.sugestao
+{
+	border: 2px solid #1b1b60;
+	display: flex;
+    flex-direction: column;
+	margin-bottom: 1em;
+    width: 60%;
+}
+
+.titulo_curso
+{
+	font-family: 'Patua One', cursive;
+	font-size: 4vmin;
+	text-align: center;
+	text-decoration: underline;
+	padding: 1em 0em 1em 0em;
+}
+
+.conteudo_curso
+{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 1.5em;
+}
+
+.conteudo_curso > p
+{
+	color: #1b1b60;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	padding: 2em;
+}
+
+.btn_cursos
+{
+	text-align: center;
+	text-decoration: none;
+	margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px)
+{
+    #cursos
+	{
+		align-items: center;
+        flex-direction: column;	
+    }
+	
+	#segundo_curso
+	{
+		padding-top: 1em;
+	}
+	
+	#pergunta_container
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.pergunta
+	{
+		margin-top: 0.5em;
+	}
+}

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Uninter - Qual é o meu curso?</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/jquery-3.3.1.js"></script>
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <header>
+                <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+            </header>
+            
+            <div id="container">
+            
+            	<div id="inicio">
+                    <span class="titulo_seguimento">Em dúvida sobre qual curso escolher?</span>
+                    <img id="img_qual_curso" src="img/qual_meu_curso.png" alt="qualomeucurso" />
+                    <button class="btn" id="btn_inicio" type="button">DESCUBRA AQUI</button>
+                </div>
+
+                <div id="opcoes">
+                    <span class="titulo_seguimento">Estou em dúvida entre:</span>
+                    <div id="cursos">
+                        <div id="primeiro_curso">
+                            <label for="combo1">Primeira opção:</label><br><br>
+                            <select id="combo1" class="combo">
+                                <option value="0">Administração (Bacharelado)</option>
+                                <option value="1">Letras (Bacharelado)</option>
+                                <option value="2">Educação Física (Licenciatura)</option>
+                                <option value="3">Pedagogia (Licenciatura)</option>
+                                <option value="4">Análise e Desenv. de Sistemas (Tecnólogo)</option>
+                                <option value="5">Marketing Digital (Tecnólogo)</option>
+                            </select>
+                        </div>
+                        
+                        <div id="segundo_curso">
+                            <label for="combo2">Segunda opção:</label><br><br>
+                            <select id="combo2" class="combo">
+                                <option value="0">Administração (Bacharelado)</option>
+                                <option value="1">Letras (Bacharelado)</option>
+                                <option value="2">Educação Física (Licenciatura)</option>
+                                <option value="3">Pedagogia (Licenciatura)</option>
+                                <option value="4">Análise e Desenv. de Sistemas (Tecnólogo)</option>
+                                <option value="5">Marketing Digital (Tecnólogo)</option>
+                            </select>
+                        </div>
+                    </div>
+					<span id="aviso_cursos"></span>
+                    <button class="btn" id="btn_cursos" type="button">QUAL O MELHOR CURSO?</button>
+                </div>
+                
+                <div id="perguntas">
+                
+                	<span class="titulo_seguimento">Com qual opção você se identifica mais?</span>
+                    
+                    <div id="pergunta_container">
+                    
+                    	<div class="pergunta" id="pergunta_adm">
+                        	<span>Sou empreendedor</span>
+						</div>
+                        
+                    	<div class="pergunta" id="pergunta_letras">
+                        	<span>Gosto muito de ler e escrever</span>
+                        </div>
+                        
+                    	<div class="pergunta" id="pergunta_edfisica">
+                        	<span>Gosto de atividades físicas</span>
+                        </div>
+                        
+                    	<div class="pergunta" id="pergunta_pedagogia">
+                        	<span>Gosto muito de ensinar</span>
+                        </div>
+                        
+                    	<div class="pergunta" id="pergunta_analise">
+                        	<span>Gosto de tecnologia</span>
+                        </div>
+                        
+                    	<div class="pergunta" id="pergunta_mkt">
+                        	<span>Tenho muita criatividade</span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div id="sugestao_container">
+                
+					<span class="titulo_seguimento">Nossa sugestão:</span>
+                    
+                    <div class="sugestao" id="sugestao_adm">
+                    	<span class="titulo_curso">Administração</span>
+                        <div class="conteudo_curso">
+							<p>O mundo dos negócios exige velocidade e dinamismo, com precisão, por isso, a UNINTER 
+                            prepara você não somente na teoria, mas também na prática. Portanto, forma profissionais com 
+                            espírito crítico e aprendizado que estarão aptos para a análise, a interpretação, a síntese e a 
+                            criação. Prontos para protagonizar o mundo das decisões.</p>
+                            <a class="btn btn_cursos" target="_blank" href="https://www.uninter.com/graduacao-ead/curso-administracao/">
+                                SAIBA MAIS
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sugestao" id="sugestao_letras">
+                    	<span class="titulo_curso">Letras</span>
+                        <div class="conteudo_curso">
+							<p>O curso de Bacharelado em Letras apresenta uma forte relação dos estudos da linguagem 
+                            com as novas tecnologias e com os estudos de arte, cultura e sociedade. O bacharel em letras 
+                            da UNINTER possui como diferencial a possibilidade de escolher sua trajetória profissional 
+                            desde o início do curso, optando por cursar disciplinas de formação específica nas áreas de 
+                            cultura e crítica literária ou de estudos gramaticais e análise linguística.</p> 
+							<a class="btn btn_cursos" target="_blank" href="https://www.uninter.com/graduacao-ead/curso-letras-bacharelado/">
+                                SAIBA MAIS
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sugestao" id="sugestao_edfisica">
+                    	<span class="titulo_curso">Ed. Física</span>
+                        <div class="conteudo_curso">
+							<p>Pelé, o Atleta do Século, rei do futebol, cinco vezes campeão do mundo, é professor de 
+                            Educação Física e Patrono da Área Desportiva da Uninter, em parceria com a Rede de Ensino 
+                            Desportivo, que já conta com 19 cursos de pós-graduação. Venha para a Uninter. As conquistas 
+                            na área da Educação Física têm ajudado em muito o desenvolvimento de profissionais, 
+                            melhorando e ampliando a inserção no mercado de trabalho, como professor ou em atividades 
+                            de planejamento, coordenação, avaliação e acompanhamento na área de Educação.</p> 
+                            <a class="btn btn_cursos" target="_blank" href="https://www.uninter.com/graduacao-ead/curso-educacao-fisica-licenciatura/">
+                                SAIBA MAIS
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sugestao" id="sugestao_pedagogia">
+                    	<span class="titulo_curso">Pedagogia</span>
+                        <div class="conteudo_curso">
+							<p>A Educação tem um papel fundamental no desenvolvimento humano e material. Mais do que 
+                            nunca o Brasil precisará de profissionais com visão ampla, integrada sobre o processo 
+                            ensino-aprendizagem e toda a infraestrutura física e organizacional a serviço da educação.</p>
+                            <a class="btn btn_cursos" target="_blank" href="https://www.uninter.com/graduacao-ead/curso-pedagogia/">
+                                SAIBA MAIS
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sugestao" id="sugestao_analise">
+                    	<span class="titulo_curso">Análise e Desenvolvimento de Sistemas</span>    
+                        <div class="conteudo_curso">
+							<p>Um analista e desenvolvedor de sistemas é o elo indispensável entre as necessidades do 
+                            mundo dos negócios e os crescentes recursos da tecnologia da informação. O mercado valoriza 
+                            profissionais desta área e é muito grande a demanda. Venha para a Uninter e dê o impulso 
+                            que sua carreira merece.</p>
+                            <a class="btn btn_cursos" target="_blank" href="https://www.uninter.com/graduacao-ead/curso-analise-e-desenvolvimento-de-sistemas/">
+                                SAIBA MAIS
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="sugestao" id="sugestao_mkt">
+                    	<span class="titulo_curso">Marketing Digital</span>
+                        <div class="conteudo_curso">
+							<p>Os processos de ensino e aprendizagem estão sendo transformados pelo uso das novas 
+                            tecnologias digitais, e isto está causando uma Transformação Disruptiva no Ensino Superior 
+                            Brasileiro e mundial. Dentro de sua característica de inovação nos processos de 
+                            aprendizagem, o Centro Universitário Internacional Uninter apresenta, o Curso Superior 
+                            de Tecnologia em Marketing Digital.</p>
+                            <a class="btn btn_cursos" target="_blank" href="https://www.uninter.com/mkt-digital-ead/">
+                                SAIBA MAIS
+                            </a>
+                        </div>
+                    </div>                    
+                
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
